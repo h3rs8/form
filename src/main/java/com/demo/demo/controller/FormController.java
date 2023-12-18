@@ -89,10 +89,11 @@ public class FormController {
 		user.setPhone(data.getPhone());
 		
 		
-		// Check if user exists already or not.
-		
-		if(uservice.doesUserExist(user.getPhone(), batch)) {
-			return new ResponseEntity<User>(HttpStatus.FOUND);
+		// Check if user exists in any batch already or not.
+		for(Batch batch1 : batchlist) {		
+			if(uservice.doesUserExist(user.getPhone(), batch)) {
+				return new ResponseEntity<User>(HttpStatus.FOUND);
+			}
 		}
 		
 		// Creating the payment object with the details input by the user.
