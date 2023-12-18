@@ -13,6 +13,8 @@ import jakarta.persistence.ManyToOne;
 public class User {
 	
 	@Id
+	@GeneratedValue
+	private long id;
 	private Long phone;
 	
 	private String name;

@@ -3,6 +3,7 @@ package com.demo.demo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.demo.demo.model.Batch;
 import com.demo.demo.model.User;
 import com.demo.demo.repo.UserRepo;
 
@@ -16,6 +17,9 @@ public class UserService {
 		repo.save(user);
 		return user;		
 		
+	}
+	public Boolean doesUserExist(Long phone,Batch batch) {
+		return repo.existsByPhoneNumberAndBatch(phone, batch);
 	}
 	
 

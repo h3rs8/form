@@ -72,6 +72,8 @@ public class FormController {
 		// Getting the current Month's Object from the list we fetched above.
 		com.demo.demo.model.Month monthobj = mlist.get(monthValue);
 		
+
+		
 		// Getting the list of batches in the current month.
 		List<Batch> batchlist = bservice.getBatchesofMonth(monthobj);
 		
@@ -85,6 +87,13 @@ public class FormController {
 		user.setAge(data.getAge());
 		user.setName(data.getName());
 		user.setPhone(data.getPhone());
+		
+		
+		// Check if user exists already or not.
+		
+		if(uservice.doesUserExist(user.getPhone(), batch)) {
+			return new ResponseEntity<User>(HttpStatus.FOUND);
+		}
 		
 		// Creating the payment object with the details input by the user.
 		Payment payment = new Payment();
