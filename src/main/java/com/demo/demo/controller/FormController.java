@@ -91,7 +91,7 @@ public class FormController {
 		
 		// Check if user exists in any batch already or not.
 		for(Batch batch1 : batchlist) {		
-			if(uservice.doesUserExist(user.getPhone(), batch)) {
+			if(uservice.doesUserExist(user.getPhone(), batch1)) {
 				return new ResponseEntity<User>(HttpStatus.FOUND);
 			}
 		}
