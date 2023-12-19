@@ -21,11 +21,25 @@ I’ve assumed:
 3. One person can enroll in only one slot in a month.
 4. The application accepts applications for the current month only.
 
-The EER Diagram is as follows: 
+
+### Explanation for Database Design 
+    @OneToMany Relationship between Year and Month since each year has 12 months.
+    @OneToMany Relationship between Month and Batch since each month has 4 batches.
+    @OneToMany Relationship between Batch and User since each Batch has multiple customers/users.
+
+    Primary Key for Year is the year itself.
+    Primary Key for all other entities is the unique @GeneratedValue Id.
+    
+   
+
+### EER Diagram: 
 
 
 ![EER Diagram1](https://github.com/h3rs8/form/assets/77108746/d1e3d033-1315-4957-8eb1-e3a72181fcff)
 
+
+
+    
 
 
 
