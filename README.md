@@ -1,7 +1,7 @@
 ## <p align="center"><strong>Assignment for Flexmoney Internship</strong></p>
 
 ### Note 1: Backend deployed on Render goes dormant after a while, since free tier service is being used. Please wait 2 minutes for it to initialize in this case.
-### Note 2: Backend deployed on Render takes a while takes some time to process and respond because free tier service is being used. Please wait 20 seconds for it to respond.
+### Note 2: Backend deployed on Render takes a while to process and respond because free tier service is being used. Please wait 15-20 seconds for it to respond.
 
 
 * Frontend is hosted at: https://yoga.harshg.live & https://fantastic-melba-869e5b.netlify.app/ 
