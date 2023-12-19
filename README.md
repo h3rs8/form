@@ -1,5 +1,9 @@
 ## <p align="center"><strong>Assignment for Flexmoney Internship</strong></p>
 
+### Note 1: Render Backend goes dormant after sometime since free tier service is being used. Please wait 2 minutes for it to initialize in this case.
+### Note 2: Render Backend takes sometime takes some time to process and respond because free tier service is being used. Please wait 20 seconds for it to respond.
+
+
 * Frontend is hosted at: https://yoga.harshg.live & https://fantastic-melba-869e5b.netlify.app/ 
 
 * README.md file and Backend Code (SpringBoot) is available at: https://github.com/h3rs8/form
@@ -39,7 +43,16 @@ I’ve assumed:
 
 
 
-    
+### Frontend
+1. Frontend is Created using Angular Framework. I've used Angular Material for theme, form and other elements.
+2. For notifications, I have used MatCardModule which gives toast notifications.
+3. To connect Frontend with the Backend, I call the REST APIs created in SpringBoot.
+
+### Deployment
+1. Azure Database for MySQL is used as database for this project.
+2. The SpringBoot Application Backend is deployed on Render.
+3. Frontend is deployed with Netlify.
+4. To connect Frontend with the Backend, REST APIs are called which are developed with SpringBoot.
 
 
 
