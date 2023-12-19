@@ -1,6 +1,6 @@
 ## <p align="center"><strong>Assignment for Flexmoney Internship</strong></p>
 
-### Note 1: Render Backend goes dormant after a while since free tier service is being used. Please wait 2 minutes for it to initialize in this case.
+### Note 1: Render Backend goes dormant after a while, since free tier service is being used. Please wait 2 minutes for it to initialize in this case.
 ### Note 2: Render Backend takes a while takes some time to process and respond because free tier service is being used. Please wait 20 seconds for it to respond.
 
 
